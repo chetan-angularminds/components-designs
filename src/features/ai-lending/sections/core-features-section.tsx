@@ -115,7 +115,7 @@ export function CoreFeaturesSection() {
                   rotateX: 10,
                   transition: { duration: 0.4, type: "spring", stiffness: 400 },
                 }}
-                className={`group relative transform-gpu ${
+                className={`group relative transform-gpu h-full ${
                   index < 4 ? "lg:col-span-1" : "lg:col-span-1"
                 } ${index === 0 || index === 7 ? "md:col-span-2 lg:col-span-2" : ""}`}
                 style={{ perspective: "1000px" }}
@@ -126,23 +126,8 @@ export function CoreFeaturesSection() {
                   />
                 </div>
 
-                <div className="relative bg-white/95 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden group-hover:bg-white group-hover:border-white/40">
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    {[...Array(3)].map((_, i) => (
-                      <div
-                        key={i}
-                        className={`absolute h-px bg-gradient-to-r ${feature.color} opacity-20`}
-                        style={{
-                          top: `${30 + i * 20}%`,
-                          left: "10%",
-                          right: "10%",
-                          transform: `rotate(${-5 + i * 5}deg)`,
-                        }}
-                      />
-                    ))}
-                  </div>
-
-                  <div className="relative p-6">
+                <div className="relative bg-white/95 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden group-hover:bg-white group-hover:border-white/40 h-full flex flex-col">
+                  <div className="relative p-6 flex-1 flex flex-col">
                     <motion.div
                       className="relative mb-4"
                       whileHover={{
@@ -176,7 +161,7 @@ export function CoreFeaturesSection() {
                     </div>
 
                     <motion.p
-                      className="text-slate-600 leading-relaxed text-sm line-clamp-4 group-hover:text-slate-700 transition-colors duration-300"
+                      className="text-slate-600 leading-relaxed text-sm line-clamp-4 group-hover:text-slate-700 transition-colors duration-300 flex-1"
                       initial={{ opacity: 0.8 }}
                       whileHover={{ opacity: 1 }}
                       transition={{ duration: 0.3 }}

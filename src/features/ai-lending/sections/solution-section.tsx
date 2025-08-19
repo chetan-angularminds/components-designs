@@ -96,7 +96,7 @@ export function SolutionSection() {
                   z: 50,
                   transition: { duration: 0.4, type: "spring", stiffness: 300 },
                 }}
-                className="group relative transform-gpu"
+                className="group relative transform-gpu h-full"
                 style={{ perspective: "1000px" }}
               >
                 <div className="absolute inset-0 transform group-hover:rotate-45 transition-transform duration-700 ease-out">
@@ -108,7 +108,7 @@ export function SolutionSection() {
                   />
                 </div>
 
-                <div className="relative bg-white/80 backdrop-blur-xl border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden group-hover:bg-white/90">
+                <div className="relative bg-white/80 backdrop-blur-xl border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden group-hover:bg-white/90 h-full flex flex-col">
                   <div
                     className={`absolute inset-0 bg-gradient-to-r ${feature.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                     style={{ padding: "1px" }}
@@ -116,7 +116,7 @@ export function SolutionSection() {
                     <div className="w-full h-full bg-white/90 rounded-2xl" />
                   </div>
 
-                  <div className="relative p-8">
+                  <div className="relative p-8 flex-1 flex flex-col">
                     <motion.div
                       className="relative mb-6"
                       whileHover={{ y: -10 }}
@@ -148,7 +148,7 @@ export function SolutionSection() {
                     </div>
 
                     <motion.p
-                      className="text-slate-600 leading-relaxed text-sm group-hover:text-slate-700 transition-colors duration-300"
+                      className="text-slate-600 leading-relaxed text-sm group-hover:text-slate-700 transition-colors duration-300 flex-1"
                       initial={{ opacity: 0.8 }}
                       whileHover={{ opacity: 1 }}
                       transition={{ duration: 0.3 }}
