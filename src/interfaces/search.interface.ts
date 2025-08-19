@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface GlobalSearchResponse {
   statusCode: number;
   data: GSearchResults;
@@ -53,7 +54,7 @@ interface GlobalSearchResults {
   };
 }
 
-interface ContentCategory {
+export interface ContentCategory {
   data:
     | MovieItem[]
     | SeriesItem[]
