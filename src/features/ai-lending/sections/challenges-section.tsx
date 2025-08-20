@@ -84,8 +84,8 @@ export function ChallengesSection() {
           {/* Hexagonal grid layout */}
           <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {challenges.map((challenge, index) => {
-              const isEven = index % 2 === 0
-              const isMiddleRow = Math.floor(index / 3) === 1
+              // const isEven = index % 2 === 0
+              // const isMiddleRow = Math.floor(index / 3) === 1
 
               return (
                 <motion.div
@@ -105,9 +105,7 @@ export function ChallengesSection() {
                     z: 50,
                     transition: { duration: 0.4, type: "spring", stiffness: 300 },
                   }}
-                  className={`group relative transform-gpu h-full ${
-                    isMiddleRow && !isEven ? "lg:translate-y-8" : ""
-                  } ${isEven ? "lg:translate-x-4" : "lg:-translate-x-4"}`}
+                  className={`group relative transform-gpu h-full `}
                   style={{ perspective: "1000px" }}
                 >
                   {/* Hexagonal background */}

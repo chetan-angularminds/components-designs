@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-amber-100">
+    <section className="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-slate-100">
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
       <div className="container mx-auto px-4 py-20 relative">
         <motion.div
@@ -20,7 +20,7 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <Badge className="mb-6 bg-orange-100 text-orange-800 border-orange-200" variant="secondary">
+            <Badge className="mb-6 bg-emerald-100 text-emerald-800 border-emerald-200" variant="secondary">
               AI-Powered Lending Solutions
             </Badge>
           </motion.div>
@@ -29,7 +29,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-orange-600 to-amber-600 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-emerald-800 to-slate-700 bg-clip-text text-transparent"
           >
             Transform Lending with Intelligent AI-Powered Platform Solutions
           </motion.h1>
@@ -50,7 +50,7 @@ export function HeroSection() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button size="lg" className="text-lg px-8 bg-orange-500 hover:bg-orange-600">
+            <Button size="lg" className="text-lg px-8 bg-emerald-600 hover:bg-emerald-700">
               Get Free Consultation
             </Button>
             <Button
